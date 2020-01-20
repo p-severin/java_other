@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context="com.example.patry.kotlinweather.MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/locationControllerGPS"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resume"/>
+
+
+    <TextView
+        android:id="@+id/longitudeTextGPS"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="Longitude: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/longitudeValueGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text="0.0"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/latitudeTextGPS"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Latitude: "
+        android:padding="@dimen/activity_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/latitudeValueGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text="0.0"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/cityNameText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeValueGPS"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="City: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/cityNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text=""
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/temperatureText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeValueGPS"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="Temperature: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text=""
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/humidityText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeValueGPS"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="Humidity: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/humidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text=""
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/pressureText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeValueGPS"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="Pressure: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/pressureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text=""
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/windText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeValueGPS"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="Wind speed: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/windValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text=""
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/cloudsText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeValueGPS"
+        android:layout_gravity="left"
+        android:padding="@dimen/activity_padding"
+        android:text="Cloudiness: "
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/cloudsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/activity_padding"
+        android:text=""
+        android:textSize="@dimen/text_size"/>
+
+
+
+</LinearLayout>
